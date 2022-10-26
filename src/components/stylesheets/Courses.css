@@ -1,0 +1,13 @@
+.courses {
+    width: calc(100% - 15rem);
+    height: 100vh;
+    overflow: scroll;
+    padding: 1.5rem 1rem;
+    background-color: var(--body-color);
+}
+
+@media screen and (max-width: 768px) {
+    .courses {
+        width: calc(100% - 5rem);
+    }
+}

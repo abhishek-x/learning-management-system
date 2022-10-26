@@ -1,0 +1,44 @@
+.cards {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.card {
+    padding: 1rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    background-color: #fff;
+}
+
+.card-image {
+    width: 20rem;
+    margin-bottom: 1.5rem;
+    border-radius: 1rem;
+}
+
+.card-contents {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.card-subtitle {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.card-btn {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.card-btn:hover {
+    color: var(--first-color);
+    cursor: pointer;
+}

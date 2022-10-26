@@ -1,0 +1,121 @@
+.navbar__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar__header-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--third-color);
+}
+
+.navbar__header-items {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__header-item {
+    display: flex;
+    align-items: center;
+    background-color: var(--body-color);
+    border-radius: 10px;
+    border: 1px solid var(--third-color);
+    padding: 0.5rem;
+    margin-right: 2rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.navbar__header-btns {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__header-icon {
+    font-size: 1.5rem;
+}
+
+.navbar__header-badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: var(--first-color);
+    color: var(--body-color);
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 50%;
+    height: 1.75rem;
+    width: 1.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar__header-item__searchbar {
+    font-size: 0.8rem;
+    background-color: var(--body-color);
+    margin-left: 1rem;
+    border: none;
+    outline: none;
+}
+
+.navbar__header-item__user {
+    width: 3rem;
+    border-radius: 50%;
+    border: 1px solid var(--second-color);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar__header {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+
+    .navbar__header-title {
+        margin-top: 2.5rem;
+    }
+
+    .navbar__header-item {
+        margin-right: 1rem;
+    }
+
+    .navbar__header-items {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .navbar__header-item__user {
+        width: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar__header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .navbar__header-items {
+        width: fit-content;
+    }
+
+    .navbar__header-item__searchgroup {
+        display: none;
+    }
+
+    .navbar__header-title {
+        font-size: 1.75rem;
+        margin-top: 0;
+    }
+
+    .navbar__header-icon {
+        font-size: 1rem;
+    }
+
+    .navbar__header-item__user {
+        width: 2rem;
+    }
+}

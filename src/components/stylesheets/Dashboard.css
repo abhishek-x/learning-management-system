@@ -1,0 +1,26 @@
+.dashboard {
+    width: calc(100% - 15rem);
+    height: 100vh;
+    overflow: scroll;
+    padding: 1.5rem 1rem;
+    background-color: var(--body-color);
+}
+
+.dashboard__section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#semester {
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    border: 1px solid var(--third-color);
+    background-color: var(--body-color);
+}
+
+@media screen and (max-width: 768px) {
+    .dashboard {
+        width: calc(100% - 5rem);
+    }
+}
